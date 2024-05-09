@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="A page that gives a picture of germany and what it can offer for a tourist">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splide</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <p>Germany</p>
+</header>
+<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide">
+                  <img src="img/heidelberg.webp" alt="Neuschwanstein">
+              </li>
+              <li class="splide__slide">
+                  <img src="img/hamburg.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                  <img src="img/frankfurt.jpg" alt="">
+              </li>
+          </ul>
+    </div>
+</section>
+<div class="introduction">
+    <p>Germany is a counrty for anyone that want too see lively landscapes, history and a lot more. A counry with mountaines, rivers and monuments that has it names in the history books.</p>
+</div>
+<section class="description-alps">
+    <div class = "description-img-container">
+        <img src="img/alps.jpg" alt="Bavarian alps">
+    </div>
+    <h1>Bavrian alps</h1>
+    <p>Perfect spot for hiking and sightseeing.</p>
+</section>
+<section class="description-monument">
+    <div class="description-img-container">
+        <img src="img/castle.jpg" alt="Neuschwanstein">
+    </div>
+    <h1>Neuschwanstein</h1>
+    <p> A famous castle located in bayern, also nominated for one of the seven new wonders of the world!</p>
+</section>
+<section class="train">
+    <div class="transport-img-container">
+       <img src="img/train.jpg" alt="">
+    </div>
+    <p>Order train ticket here!</p>
+    <button>Train</button>   
+</section>
+<section class="airplane">
+    <div class="transport-img-container">
+       <img src="img/airport.jpg" alt="">
+    </div>
+    <p>Order flight ticket here!</p>
+    <button>Flight</button>   
+</section >
+<nav>
+    <h1>Contacts</h1>
+    <a href="#">germantoday@hotmail.com</a>
+    <a href="#">056-603 32 45</a>
+</nav>
+<script>
+new Splide( '.splide', {
+    speed: 400,
+    type: 'loop',
+    wheel: true
+} ).mount();
+  </script>
+</body>
+</html>
